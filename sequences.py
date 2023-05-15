@@ -84,6 +84,13 @@ print(set_of_integers)
 # Loops
 print('***Loops in python ***')
 
+"""
+There are two loops in python:
+1. For loop
+2. While loop
+"""
+
+# 1. For loop
 for i in [0,1,2,3,4,5]:
     print(i)
 
@@ -91,4 +98,30 @@ for i in [0,1,2,3,4,5]:
 friends = ['mike', 'josh', 'katie', 'pat']
 
 for name in friends:
+    if name == 'josh':
+        print('skipping one friend')
+        continue
     print(f'Hi, {name}')
+
+# 2. While loop
+"""
+while (condition):
+    ...
+"""
+
+counter = 0
+while (counter < 5):
+    counter += 1
+
+    if (counter == 6):
+        print('Breaking out of loop')
+        break
+
+    if (counter == 3):
+        print('Skipping current iteration')
+        continue
+
+    print(f'Counter = {counter}')
+
+print(f'Loop ran for {counter} times')
+print('Done with while loop')
